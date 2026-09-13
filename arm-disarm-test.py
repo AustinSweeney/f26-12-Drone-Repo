@@ -39,7 +39,7 @@ class ArmDisarmNode(Node):
 
         self.status_subscriber = self.create_subscription(
             VehicleStatus,
-            '/fmu/out/vehicle_status',
+            '/fmu/out/vehicle_status_v2',
             self.vehicle_status_callback,
             status_qos
         )
